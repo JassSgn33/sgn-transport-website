@@ -19,6 +19,7 @@ const NAV = [
   { label: "Fleet", href: "#fleet" },
   { label: "Coverage", href: "#coverage" },
   { label: "Compliance", href: "#compliance" },
+  { label: "Environmental Soil Hauling (MOE/MECP)", href: "/moe" },
   { label: "Drivers", href: "#drivers" },
   { label: "Brokers", href: "#brokers" },
   { label: "Order Trucks", href: "#order" },
