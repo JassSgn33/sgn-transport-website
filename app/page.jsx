@@ -61,12 +61,22 @@ export default function Page() {
                 <div className="text-xs text-neutral-500">Since 2020 • Brampton, ON</div>
               </div>
             </a>
-            <nav className="hidden md:flex gap-6 text-sm">
-              {NAV.map(n => <a key={n.href} href={n.href} className="text-neutral-600 hover:text-neutral-900">{n.label}</a>)}
-            </nav>
-            <div className="flex items-center gap-3">
-              <a href="#order" className="btn btn-primary">Order Trucks</a>
-            </div>
+           <nav className="hidden md:flex items-center gap-5 mr-8 lg:mr-12 text-sm">
+  {NAV.map(n => (
+    <a
+      key={n.href}
+      href={n.href}
+      className="text-neutral-700 hover:text-neutral-900 whitespace-nowrap"
+    >
+      {n.label}
+    </a>
+  ))}
+</nav>
+
+<div className="flex items-center">
+  <a href="#order" className="btn btn-primary">Order Trucks</a>
+</div>
+
           </div>
         </div>
       </header>
