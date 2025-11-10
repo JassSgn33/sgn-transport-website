@@ -66,7 +66,7 @@ export default function Page() {
         <div className="flex flex-col leading-tight">
           <span className="font-semibold text-lg">{BUSINESS.name}</span>
           <span className="text-xs text-neutral-500">
-            Since 2020 • Brampton, ON
+            Since 2004 • Brampton, ON
           </span>
         </div>
       </a>
