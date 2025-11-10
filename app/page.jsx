@@ -50,23 +50,29 @@ const FadeIn = ({ children, delay = 0 }) => (
 export default function Page() {
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900">
-      {/* Header */}
+     {/* Header */}
 <header className="sticky top-0 z-40 backdrop-blur bg-white/80 border-b">
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div className="flex h-16 items-center justify-between">
+    <div className="flex h-20 items-center justify-between">
 
       {/* Logo + Business name */}
-      <a href="#home" className="flex items-center gap-3">
-        <img src="/sgn-logo.jpg" alt="SGN Logo" className="h-12 w-auto rounded-md shadow-sm bg-white p-1" />
+      <a href="#home" className="flex items-center gap-4">
+        <img
+          src="/sgn-logo.jpg"
+          alt="SGN Logo"
+          className="h-14 w-auto rounded-md shadow-sm bg-white p-1"
+        />
         <div className="leading-tight">
-          <div className="font-semibold">{BUSINESS.name}</div>
-          <div className="text-xs text-neutral-500">Since 2020 • Brampton, ON</div>
+          <div className="font-semibold text-lg">{BUSINESS.name}</div>
+          <div className="text-xs text-neutral-500">
+            Since 2020 • Brampton, ON
+          </div>
         </div>
       </a>
 
       {/* NAVIGATION */}
       <nav className="hidden md:flex items-center gap-8 text-sm">
-        {NAV.map(n => (
+        {NAV.map((n) => (
           <a
             key={n.href}
             href={n.href}
@@ -78,14 +84,16 @@ export default function Page() {
       </nav>
 
       {/* Order Trucks button */}
-      <div className="flex items-center ml-4">
-        <a href="#order" className="btn btn-primary whitespace-nowrap">Order Trucks</a>
-      </div>
+      <a
+        href="#order"
+        className="hidden md:inline-block btn btn-primary whitespace-nowrap"
+      >
+        Order Trucks
+      </a>
 
     </div>
   </div>
 </header>
-
 
       {/* Hero */}
       <section id="home" className="relative overflow-hidden">
