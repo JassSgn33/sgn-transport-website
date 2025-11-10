@@ -51,35 +51,41 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900">
       {/* Header */}
-      <header className="sticky top-0 z-40 backdrop-blur bg-white/80 border-b">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between">
-            <a href="#home" className="flex items-center gap-3">
-              <img src="/sgn-logo.jpg" alt="SGN Logo" className="h-12 w-auto rounded-md shadow-sm bg-white p-1"/>
-              <div className="leading-tight">
-                <div className="font-semibold">{BUSINESS.name}</div>
-                <div className="text-xs text-neutral-500">Since 2020 • Brampton, ON</div>
-              </div>
-            </a>
-           <nav className="hidden md:flex items-center gap-5 mr-8 lg:mr-12 text-sm">
-  {NAV.map(n => (
-    <a
-      key={n.href}
-      href={n.href}
-      className="text-neutral-700 hover:text-neutral-900 whitespace-nowrap"
-    >
-      {n.label}
-    </a>
-  ))}
-</nav>
+<header className="sticky top-0 z-40 backdrop-blur bg-white/80 border-b">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="flex h-16 items-center justify-between">
 
-<div className="flex items-center">
-  <a href="#order" className="btn btn-primary">Order Trucks</a>
-</div>
-
-          </div>
+      {/* Logo + Business name */}
+      <a href="#home" className="flex items-center gap-3">
+        <img src="/sgn-logo.jpg" alt="SGN Logo" className="h-12 w-auto rounded-md shadow-sm bg-white p-1" />
+        <div className="leading-tight">
+          <div className="font-semibold">{BUSINESS.name}</div>
+          <div className="text-xs text-neutral-500">Since 2020 • Brampton, ON</div>
         </div>
-      </header>
+      </a>
+
+      {/* NAVIGATION */}
+      <nav className="hidden md:flex items-center gap-8 text-sm">
+        {NAV.map(n => (
+          <a
+            key={n.href}
+            href={n.href}
+            className="text-neutral-700 hover:text-neutral-900 whitespace-nowrap"
+          >
+            {n.label}
+          </a>
+        ))}
+      </nav>
+
+      {/* Order Trucks button */}
+      <div className="flex items-center ml-4">
+        <a href="#order" className="btn btn-primary whitespace-nowrap">Order Trucks</a>
+      </div>
+
+    </div>
+  </div>
+</header>
+
 
       {/* Hero */}
       <section id="home" className="relative overflow-hidden">
