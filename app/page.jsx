@@ -10,7 +10,7 @@ const BUSINESS = {
   email: "Sgntransport94@gmail.com",
   address: "273 Glidden Rd, Brampton, ON",
   hours: "Mon–Sat 6:00am–7:00pm",
-  social: { instagram: "https://instagram.com/sgntransport" }
+  social: { instagram: "https://www.instagram.com/sgntransportinc" }
 };
 
 const NAV = [
